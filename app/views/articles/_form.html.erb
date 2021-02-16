@@ -1,0 +1,9 @@
+<div class="new-form">
+  <%= simple_form_for(@article) do |f| %>
+    <%= f.input :title, input_html: { class: "input-text", placeholder: 'title' }, label: false %>
+    <%= f.input :content, input_html: { class: "input-textbox", placeholder: 'content' }, label: false %>
+    <div class="button-div">
+      <%= f.button :submit, id: "input-btn" %>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,16 @@
+<div class="center-flex">
+  <h1>articles</h1>
+</div>
+
+<div class="container">
+  <div class="parent">
+    <% @articles.each do |each| %>
+      <%= link_to(each) do %>
+        <div class="card">
+          <h3><%= each.title %></h3>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
+

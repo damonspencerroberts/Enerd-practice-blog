@@ -1,0 +1,22 @@
+<div class="center-flex">
+  <h1>current article</h1>
+</div>
+
+<div class="article-page">
+  <div class="article-page-title">
+    <div>
+      <h3><%= @article.title %></h3>
+    </div>
+    <div>
+      <%= link_to edit_article_path(@article) do %>
+        <i class="fas fa-pen fa-2x icon"></i>
+      <% end %>
+      <%= link_to article_path(@article), method: :delete, data: {confirm: 'Are you sure?'}, class: "home-btn" do %>
+        <i class="fas fa-trash fa-2x icon"></i>
+      <% end %>
+    </div>
+  </div>
+  <div class="article-page-content">
+    <p><%= @article.content %></p>
+  </div>
+</div>

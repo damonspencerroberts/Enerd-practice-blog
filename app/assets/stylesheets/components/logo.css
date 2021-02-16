@@ -1,0 +1,23 @@
+.logo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  animation: fromLeft 1s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes fromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

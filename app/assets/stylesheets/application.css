@@ -13,3 +13,28 @@
  *= require_tree .
  *= require_self
  */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap');
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
+body {
+  background-color: #a3d2ca;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #db6400;
+  font-family: 'Nunito', sans-serif !important;
+  font-weight: 300;
+}
+
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.center-flex h1 {
+  font-weight: 300;
+  font-size: 3rem;
+}

@@ -1,0 +1,36 @@
+.article-page {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20% 150px 20%;
+}
+
+.article-page-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.article-page-title h3 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  font-family: inherit;
+}
+
+.article-page-content p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: inherit;
+  color: #5eaaa8;
+}
+
+.icon {
+  transition: color 0.4s;
+  cursor: pointer;
+  padding: 5px;
+  text-decoration: none;
+  color: #db6400;
+}
+
+.icon:hover {
+  color: #5EAAA8;
+}
